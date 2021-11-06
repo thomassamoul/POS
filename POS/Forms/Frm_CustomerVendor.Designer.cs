@@ -68,7 +68,7 @@ namespace POS.Forms
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(447, 158);
+            this.layoutControl1.Size = new System.Drawing.Size(386, 178);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -77,7 +77,7 @@ namespace POS.Forms
             this.txt_AccountID.Location = new System.Drawing.Point(12, 108);
             this.txt_AccountID.Name = "txt_AccountID";
             this.txt_AccountID.Properties.ReadOnly = true;
-            this.txt_AccountID.Size = new System.Drawing.Size(363, 20);
+            this.txt_AccountID.Size = new System.Drawing.Size(293, 20);
             this.txt_AccountID.StyleController = this.layoutControl1;
             this.txt_AccountID.TabIndex = 8;
             // 
@@ -85,7 +85,7 @@ namespace POS.Forms
             // 
             this.txt_Address.Location = new System.Drawing.Point(12, 84);
             this.txt_Address.Name = "txt_Address";
-            this.txt_Address.Size = new System.Drawing.Size(363, 20);
+            this.txt_Address.Size = new System.Drawing.Size(293, 20);
             this.txt_Address.StyleController = this.layoutControl1;
             this.txt_Address.TabIndex = 7;
             // 
@@ -93,7 +93,7 @@ namespace POS.Forms
             // 
             this.txt_Mobile.Location = new System.Drawing.Point(12, 60);
             this.txt_Mobile.Name = "txt_Mobile";
-            this.txt_Mobile.Size = new System.Drawing.Size(363, 20);
+            this.txt_Mobile.Size = new System.Drawing.Size(293, 20);
             this.txt_Mobile.StyleController = this.layoutControl1;
             this.txt_Mobile.TabIndex = 6;
             // 
@@ -101,7 +101,7 @@ namespace POS.Forms
             // 
             this.txt_Phone.Location = new System.Drawing.Point(12, 36);
             this.txt_Phone.Name = "txt_Phone";
-            this.txt_Phone.Size = new System.Drawing.Size(363, 20);
+            this.txt_Phone.Size = new System.Drawing.Size(293, 20);
             this.txt_Phone.StyleController = this.layoutControl1;
             this.txt_Phone.TabIndex = 5;
             // 
@@ -109,7 +109,7 @@ namespace POS.Forms
             // 
             this.txt_Name.Location = new System.Drawing.Point(12, 12);
             this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(363, 20);
+            this.txt_Name.Size = new System.Drawing.Size(293, 20);
             this.txt_Name.StyleController = this.layoutControl1;
             this.txt_Name.TabIndex = 4;
             // 
@@ -124,7 +124,7 @@ namespace POS.Forms
             this.layoutControlItem4,
             this.layoutControlItem5});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(447, 158);
+            this.Root.Size = new System.Drawing.Size(386, 178);
             this.Root.TextVisible = false;
             // 
             // layoutControlItem1
@@ -132,7 +132,7 @@ namespace POS.Forms
             this.layoutControlItem1.Control = this.txt_Name;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(427, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(366, 24);
             this.layoutControlItem1.Text = "الاسم";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(57, 13);
             // 
@@ -141,7 +141,7 @@ namespace POS.Forms
             this.layoutControlItem2.Control = this.txt_Phone;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(427, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(366, 24);
             this.layoutControlItem2.Text = "الهاتف";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(57, 13);
             // 
@@ -150,7 +150,7 @@ namespace POS.Forms
             this.layoutControlItem3.Control = this.txt_Mobile;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(427, 24);
+            this.layoutControlItem3.Size = new System.Drawing.Size(366, 24);
             this.layoutControlItem3.Text = "الموبيل";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(57, 13);
             // 
@@ -159,7 +159,7 @@ namespace POS.Forms
             this.layoutControlItem4.Control = this.txt_Address;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(427, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(366, 24);
             this.layoutControlItem4.Text = "العنوان";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(57, 13);
             // 
@@ -168,7 +168,7 @@ namespace POS.Forms
             this.layoutControlItem5.Control = this.txt_AccountID;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(427, 42);
+            this.layoutControlItem5.Size = new System.Drawing.Size(366, 62);
             this.layoutControlItem5.Text = "رقم الحساب";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Right;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(57, 13);
@@ -177,8 +177,9 @@ namespace POS.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 182);
+            this.ClientSize = new System.Drawing.Size(386, 202);
             this.Controls.Add(this.layoutControl1);
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.Name = "Frm_CustomerVendor";
             this.Text = "Frm_CustomerVendor";
             this.Load += new System.EventHandler(this.Frm_CustomerVendor_Load);

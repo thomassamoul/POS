@@ -118,58 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="save_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="products" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\products.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="actions_addcircled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_addcircled.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="save_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="actions_deletecircled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_deletecircled.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="actions_window" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actions_window.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="private" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\private.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="bo_product_group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bo_product_group.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="trash_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trash_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bo_sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bo_sale.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="recurrence_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recurrence_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bo_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bo_user.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="trash_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trash_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="business_safe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\business_safe.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="add_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="customerprofilereport" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\customerprofilereport.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="recurrence_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\recurrence_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="info_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="changefontstyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\changefontstyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="changeview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\changeview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>..\Resources\changeview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="listview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\listview.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="customerquicksales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerquicksales.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="refreshallpivottable" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refreshallpivottable.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="initialstate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\initialstate.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="financial" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\financial.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.1, Version=20.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="products" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\products.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save1.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="shopping_sales" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping_sales.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="shopping_store" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping_store.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
 </root>

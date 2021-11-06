@@ -17,7 +17,7 @@ namespace POS.Class
             public string Name { get; set; }
         }
 
-        public static List<ValueAndID> ProductTypesList = new List<ValueAndID>()
+        private static List<ValueAndID> productTypesList = new List<ValueAndID>()
             {
                 new ValueAndID() { ID = 0, Name = "مخزني" },
                 new ValueAndID() { ID = 1, Name = "خدمي" }
@@ -29,7 +29,7 @@ namespace POS.Class
             Service
         }
 
-        public static List<ValueAndID> PartTypesList = new List<ValueAndID>()
+        private static List<ValueAndID> partTypesList = new List<ValueAndID>()
             {
                 new ValueAndID() { ID = 0, Name = "موورد" },
                 new ValueAndID() { ID = 1, Name = "عميل" }
@@ -41,7 +41,7 @@ namespace POS.Class
             Customer
         }
 
-        public static List<ValueAndID> InvoiceTypesList = new List<ValueAndID>()
+        private static List<ValueAndID> invoiceTypesList = new List<ValueAndID>()
             {
                 new ValueAndID() { ID = (int)InvoiceType.Purchase, Name = "مشتريات" },
                 new ValueAndID() { ID = (int)InvoiceType.Sales, Name = "مبيعات" },
@@ -49,12 +49,30 @@ namespace POS.Class
                 new ValueAndID() { ID = (int)InvoiceType.SalesReturn, Name = "مردود مبيعات" },
         };
 
+        public static List<ValueAndID> PartTypesList { get => partTypesList; set => partTypesList = value; }
+        public static List<ValueAndID> ProductTypesList { get => productTypesList; set => productTypesList = value; }
+        public static List<ValueAndID> InvoiceTypesList { get => invoiceTypesList; set => invoiceTypesList = value; }
+
         public enum InvoiceType
+        {
+            Purchase = SourceType.Purchase,
+            Sales = SourceType.Sales,
+            PurchaseReturn = SourceType.PurchaseReturn,
+            SalesReturn = SourceType.SalesReturn
+        }
+
+        public enum SourceType
         {
             Purchase,
             Sales,
             PurchaseReturn,
             SalesReturn
+        }
+
+        public enum CostDistributionOptions
+        {
+            ByPrice,
+            ByQty,
         }
 
         public static bool IsTextValid(this TextEdit txt)
@@ -146,6 +164,27 @@ namespace POS.Class
             lkp.Properties.DataSource = dataSource;
             lkp.Properties.ValueMember = valueMember;
             lkp.Properties.DisplayMember = displayMember;
+        }
+
+        public static string GetNextNumberInString(string number)
+        {
+            if (number == string.Empty || number == null)
+
+                return "1";
+            string str1 = "";
+            foreach (char c in number)
+                str1 = char.IsDigit(c) ? str1 + c.ToString() : "";
+            if (str1 == string.Empty)
+                return number + "1";
+
+            string str2 = str1.Insert(0, "1");
+            str2 = (Convert.ToInt64(str2) + 1).ToString();
+            string str3 = str2[0] == '1' ? str2.Remove(0, 1) : str2.Remove(0, 1).Insert(0, "1");
+
+            int index = number.LastIndexOf(str1);
+            number = number.Remove(index);
+            number = number.Insert(index, str3);
+            return number;
         }
     }
 }

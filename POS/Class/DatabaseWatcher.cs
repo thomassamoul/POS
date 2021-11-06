@@ -10,11 +10,11 @@ namespace POS.Class
 {
     public static class DatabaseWatcher
     {
-        public static SqlTableDependency<Products> Product;
+        public static SqlTableDependency<Product> Products;
 
-        public class Products : DAL.Product { }
+        public class Product : DAL.Product { }
 
-        public static void ProductsChanged(object sender, RecordChangedEventArgs<Products> e)
+        public static void ProductsChanged(object sender, RecordChangedEventArgs<Product> e)
         {
             Application.OpenForms[0].Invoke(new Action(() =>
             {
@@ -73,7 +73,7 @@ namespace POS.Class
         {
             public string Translate()
             {
-                return "[IsCustomuer] = 0";
+                return "[IsCustomer] = 0";
             }
         }
 
@@ -107,7 +107,7 @@ namespace POS.Class
         {
             public string Translate()
             {
-                return "[IsCustomuer] = 'true'";
+                return "[IsCustomer] = 'true'";
             }
         }
     }

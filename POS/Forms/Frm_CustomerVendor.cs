@@ -27,7 +27,7 @@ namespace POS.Forms
             using (var db = new DAL.dbDataContext())
             {
                 cusVendor = db.CustomersAndVendors.Single(s => s.ID == id);
-                isCustomer = cusVendor.IsCustomuer;
+                isCustomer = cusVendor.IsCustomer;
                 GetData();
             }
         }
@@ -59,7 +59,7 @@ namespace POS.Forms
             cusVendor.Mobile = txt_Mobile.Text;
             cusVendor.Phone = txt_Phone.Text;
             cusVendor.Address = txt_Address.Text;
-            cusVendor.IsCustomuer = isCustomer;
+            cusVendor.IsCustomer = isCustomer;
             base.SetData();
         }
 
@@ -71,7 +71,7 @@ namespace POS.Forms
                 return false;
             }
             var db = new DAL.dbDataContext();
-            if (db.CustomersAndVendors.Where(x => x.Name.Trim() == txt_Name.Text.Trim() && x.IsCustomuer == isCustomer &&
+            if (db.CustomersAndVendors.Where(x => x.Name.Trim() == txt_Name.Text.Trim() && x.IsCustomer == isCustomer &&
             x.ID != cusVendor.ID).Count() > 0)
             {
                 txt_Name.ErrorText = "هذا الاسم مسجل مسبقا";
@@ -82,8 +82,7 @@ namespace POS.Forms
 
         public override void Save()
         {
-            if (IsDataValidated() == false)
-
+            if (!IsDataValidated())
                 return;
 
             var db = new DAL.dbDataContext();
@@ -94,7 +93,6 @@ namespace POS.Forms
                 db.CustomersAndVendors.InsertOnSubmit(cusVendor);
                 account = new DAL.Account();
                 db.Accounts.InsertOnSubmit(account);
-
             }
             else
             {

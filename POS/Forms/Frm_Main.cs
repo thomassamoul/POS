@@ -24,6 +24,7 @@ namespace POS.Forms
         {
             InitializeComponent();
             accordionControl1.ElementClick += AccordionControl1_ElementClick;
+
         }
 
         private void AccordionControl1_ElementClick(object sender, DevExpress.XtraBars.Navigation.ElementClickEventArgs e)
@@ -39,6 +40,7 @@ namespace POS.Forms
         {
             Form frm = null;
 
+         
             switch (name)
             {
                 case "Frm_Vendor":

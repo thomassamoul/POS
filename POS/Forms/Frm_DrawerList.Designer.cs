@@ -58,7 +58,6 @@ namespace POS.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gridControl1);
-            this.IconOptions.SvgImage = global::POS.Properties.Resources.financial;
             this.Name = "Frm_DrawerList";
             this.Text = "قائمة الخزن";
             this.Load += new System.EventHandler(this.Frm_DrawerList_Load);

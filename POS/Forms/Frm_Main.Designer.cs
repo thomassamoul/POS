@@ -172,6 +172,7 @@ namespace POS.Forms
             this.accordionControlElement12.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement2,
             this.accordionControlElement13});
+            this.accordionControlElement12.Expanded = true;
             this.accordionControlElement12.Name = "accordionControlElement12";
             this.accordionControlElement12.Text = "الخزن";
             // 

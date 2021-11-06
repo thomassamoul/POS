@@ -30,13 +30,13 @@ namespace POS.Forms
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.txt_Name = new DevExpress.XtraEditors.TextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Name.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,11 +46,20 @@ namespace POS.Forms
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 24);
             this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(422, 0, 650, 400);
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(362, 54);
+            this.layoutControl1.Size = new System.Drawing.Size(249, 54);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // txt_Name
+            // 
+            this.txt_Name.Location = new System.Drawing.Point(8, 8);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.Size = new System.Drawing.Size(196, 20);
+            this.txt_Name.StyleController = this.layoutControl1;
+            this.txt_Name.TabIndex = 4;
             // 
             // Root
             // 
@@ -59,23 +68,15 @@ namespace POS.Forms
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(362, 54);
+            this.Root.Size = new System.Drawing.Size(249, 54);
             this.Root.TextVisible = false;
-            // 
-            // txt_Name
-            // 
-            this.txt_Name.Location = new System.Drawing.Point(12, 12);
-            this.txt_Name.Name = "txt_Name";
-            this.txt_Name.Size = new System.Drawing.Size(306, 20);
-            this.txt_Name.StyleController = this.layoutControl1;
-            this.txt_Name.TabIndex = 4;
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txt_Name;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(342, 34);
+            this.layoutControlItem1.Size = new System.Drawing.Size(235, 40);
             this.layoutControlItem1.Text = "الاسم";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(29, 13);
             // 
@@ -83,16 +84,16 @@ namespace POS.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 78);
+            this.ClientSize = new System.Drawing.Size(249, 78);
             this.Controls.Add(this.layoutControl1);
-            this.IconOptions.SvgImage = global::POS.Properties.Resources._private;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_Drawer";
             this.Text = "الخزنات";
             this.Controls.SetChildIndex(this.layoutControl1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Name.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -61,16 +61,16 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -184,6 +184,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\CostDistributionOption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CostDistributionOption.Designer.cs">
+      <DependentUpon>CostDistributionOption.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Frm_CompanyInfo.resx">
       <DependentUpon>Frm_CompanyInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,14 +232,12 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="UserControls\CostDistributionOption.resx">
+      <DependentUpon>CostDistributionOption.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DAL\db.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>db.designer.cs</LastGenOutput>
@@ -248,6 +252,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -258,61 +267,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\info_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\save_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\save_16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\trash_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\trash_16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancel.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\add_16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\listview.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\changeview.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\refreshallpivottable.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\recurrence_16x16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\recurrence_32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\private.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\customerprofilereport.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\products.svg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\financial.svg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">
@@ -325,6 +280,64 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\save.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_addcircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_deletecircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_window.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_product_group.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_sale.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_user.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_safe.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changefontstyle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerquicksales.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\initialstate.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\products.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_sales.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_store.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

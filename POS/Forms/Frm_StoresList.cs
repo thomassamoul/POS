@@ -24,20 +24,11 @@ namespace POS.Forms
 
         private void GridView1_DoubleClick(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(gridView1.GetFocusedRowCellValue("ID"));
-            Frm_Stores frm = new Frm_Stores(id);
+            int SoteID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("ID"));
+            Frm_Stores frm = new Frm_Stores(SoteID);
             frm.ShowDialog();
             RefreshData();
         }
-
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            Frm_Stores frm = new Frm_Stores();
-            frm.ShowDialog();
-            RefreshData();
-
-        }
-
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             RefreshData();
@@ -49,5 +40,13 @@ namespace POS.Forms
             gridControl1.DataSource = db.Stores.Select(x => new { x.ID, x.Name });
 
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Frm_Stores frm = new Frm_Stores();
+            frm.ShowDialog();
+            RefreshData();
+        }
+
     }
 }

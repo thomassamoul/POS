@@ -61,9 +61,6 @@ namespace POS.Forms
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup8 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -82,6 +79,9 @@ namespace POS.Forms
             this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -118,9 +118,6 @@ namespace POS.Forms
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
@@ -139,6 +136,9 @@ namespace POS.Forms
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -193,7 +193,7 @@ namespace POS.Forms
             // 
             this.memoEme_ShoppingAddress.Location = new System.Drawing.Point(41, 391);
             this.memoEme_ShoppingAddress.Name = "memoEme_ShoppingAddress";
-            this.memoEme_ShoppingAddress.Size = new System.Drawing.Size(289, 98);
+            this.memoEme_ShoppingAddress.Size = new System.Drawing.Size(280, 98);
             this.memoEme_ShoppingAddress.StyleController = this.layoutControl1;
             this.memoEme_ShoppingAddress.TabIndex = 14;
             // 
@@ -229,7 +229,7 @@ namespace POS.Forms
             this.lkp_Drawer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkp_Drawer.Properties.NullText = "";
-            this.lkp_Drawer.Size = new System.Drawing.Size(187, 20);
+            this.lkp_Drawer.Size = new System.Drawing.Size(178, 20);
             this.lkp_Drawer.StyleController = this.layoutControl1;
             this.lkp_Drawer.TabIndex = 15;
             // 
@@ -272,7 +272,7 @@ namespace POS.Forms
             this.spn_Net.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.spn_Net.Properties.ReadOnly = true;
-            this.spn_Net.Size = new System.Drawing.Size(128, 26);
+            this.spn_Net.Size = new System.Drawing.Size(119, 26);
             this.spn_Net.StyleController = this.layoutControl1;
             this.spn_Net.TabIndex = 19;
             // 
@@ -289,7 +289,7 @@ namespace POS.Forms
             this.spn_Expences.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.spn_Expences.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spn_Expences.Size = new System.Drawing.Size(128, 20);
+            this.spn_Expences.Size = new System.Drawing.Size(119, 20);
             this.spn_Expences.StyleController = this.layoutControl1;
             this.spn_Expences.TabIndex = 12;
             // 
@@ -300,13 +300,13 @@ namespace POS.Forms
             0,
             0,
             0});
-            this.spn_TaxValue.Location = new System.Drawing.Point(775, 391);
+            this.spn_TaxValue.Location = new System.Drawing.Point(774, 391);
             this.spn_TaxValue.Name = "spn_TaxValue";
             this.spn_TaxValue.Properties.Appearance.Options.UseTextOptions = true;
             this.spn_TaxValue.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.spn_TaxValue.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spn_TaxValue.Size = new System.Drawing.Size(58, 20);
+            this.spn_TaxValue.Size = new System.Drawing.Size(50, 20);
             this.spn_TaxValue.StyleController = this.layoutControl1;
             this.spn_TaxValue.TabIndex = 10;
             // 
@@ -325,7 +325,7 @@ namespace POS.Forms
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.spn_Tax.Properties.Mask.EditMask = "p";
             this.spn_Tax.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.spn_Tax.Size = new System.Drawing.Size(66, 20);
+            this.spn_Tax.Size = new System.Drawing.Size(65, 20);
             this.spn_Tax.StyleController = this.layoutControl1;
             this.spn_Tax.TabIndex = 11;
             // 
@@ -344,7 +344,7 @@ namespace POS.Forms
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.spn_DiscountRation.Properties.Mask.EditMask = "p";
             this.spn_DiscountRation.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.spn_DiscountRation.Size = new System.Drawing.Size(66, 20);
+            this.spn_DiscountRation.Size = new System.Drawing.Size(65, 20);
             this.spn_DiscountRation.StyleController = this.layoutControl1;
             this.spn_DiscountRation.TabIndex = 9;
             // 
@@ -355,13 +355,13 @@ namespace POS.Forms
             0,
             0,
             0});
-            this.spn_DiscountValue.Location = new System.Drawing.Point(775, 439);
+            this.spn_DiscountValue.Location = new System.Drawing.Point(774, 439);
             this.spn_DiscountValue.Name = "spn_DiscountValue";
             this.spn_DiscountValue.Properties.Appearance.Options.UseTextOptions = true;
             this.spn_DiscountValue.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.spn_DiscountValue.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.spn_DiscountValue.Size = new System.Drawing.Size(58, 20);
+            this.spn_DiscountValue.Size = new System.Drawing.Size(50, 20);
             this.spn_DiscountValue.StyleController = this.layoutControl1;
             this.spn_DiscountValue.TabIndex = 8;
             // 
@@ -379,7 +379,7 @@ namespace POS.Forms
             this.spn_Total.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.spn_Total.Properties.ReadOnly = true;
-            this.spn_Total.Size = new System.Drawing.Size(128, 20);
+            this.spn_Total.Size = new System.Drawing.Size(119, 20);
             this.spn_Total.StyleController = this.layoutControl1;
             this.spn_Total.TabIndex = 13;
             // 
@@ -404,7 +404,7 @@ namespace POS.Forms
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dt_PostDate.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
             this.dt_PostDate.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dt_PostDate.Size = new System.Drawing.Size(128, 20);
+            this.dt_PostDate.Size = new System.Drawing.Size(119, 20);
             this.dt_PostDate.StyleController = this.layoutControl1;
             this.dt_PostDate.TabIndex = 5;
             // 
@@ -412,7 +412,7 @@ namespace POS.Forms
             // 
             this.me_Notes.Location = new System.Drawing.Point(705, 302);
             this.me_Notes.Name = "me_Notes";
-            this.me_Notes.Size = new System.Drawing.Size(128, 16);
+            this.me_Notes.Size = new System.Drawing.Size(119, 16);
             this.me_Notes.StyleController = this.layoutControl1;
             this.me_Notes.TabIndex = 7;
             // 
@@ -423,7 +423,7 @@ namespace POS.Forms
             this.lkp_Branch.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkp_Branch.Properties.NullText = "";
-            this.lkp_Branch.Size = new System.Drawing.Size(128, 20);
+            this.lkp_Branch.Size = new System.Drawing.Size(119, 20);
             this.lkp_Branch.StyleController = this.layoutControl1;
             this.lkp_Branch.TabIndex = 6;
             // 
@@ -438,14 +438,14 @@ namespace POS.Forms
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dt_DelivaryDate.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
             this.dt_DelivaryDate.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dt_DelivaryDate.Size = new System.Drawing.Size(289, 20);
+            this.dt_DelivaryDate.Size = new System.Drawing.Size(280, 20);
             this.dt_DelivaryDate.StyleController = this.layoutControl1;
             this.dt_DelivaryDate.TabIndex = 13;
             // 
             // dt_Date
             // 
             this.dt_Date.EditValue = null;
-            this.dt_Date.Location = new System.Drawing.Point(705, 159);
+            this.dt_Date.Location = new System.Drawing.Point(705, 69);
             this.dt_Date.Name = "dt_Date";
             this.dt_Date.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -453,40 +453,40 @@ namespace POS.Forms
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dt_Date.Properties.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.Fluent;
             this.dt_Date.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dt_Date.Size = new System.Drawing.Size(128, 20);
+            this.dt_Date.Size = new System.Drawing.Size(119, 20);
             this.dt_Date.StyleController = this.layoutControl1;
             this.dt_Date.TabIndex = 3;
             // 
             // lkp_PartType
             // 
-            this.lkp_PartType.Location = new System.Drawing.Point(705, 45);
+            this.lkp_PartType.Location = new System.Drawing.Point(705, 138);
             this.lkp_PartType.Name = "lkp_PartType";
             this.lkp_PartType.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lkp_PartType.Properties.NullText = "";
-            this.lkp_PartType.Size = new System.Drawing.Size(128, 20);
+            this.lkp_PartType.Size = new System.Drawing.Size(119, 20);
             this.lkp_PartType.StyleController = this.layoutControl1;
             this.lkp_PartType.TabIndex = 0;
             // 
             // txt_Code
             // 
-            this.txt_Code.Location = new System.Drawing.Point(705, 135);
+            this.txt_Code.Location = new System.Drawing.Point(705, 45);
             this.txt_Code.Name = "txt_Code";
-            this.txt_Code.Size = new System.Drawing.Size(128, 20);
+            this.txt_Code.Size = new System.Drawing.Size(119, 20);
             this.txt_Code.StyleController = this.layoutControl1;
             this.txt_Code.TabIndex = 2;
             // 
             // glkp_PartID
             // 
             this.glkp_PartID.EditValue = "";
-            this.glkp_PartID.Location = new System.Drawing.Point(705, 66);
+            this.glkp_PartID.Location = new System.Drawing.Point(705, 159);
             this.glkp_PartID.Name = "glkp_PartID";
             this.glkp_PartID.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Plus)});
             this.glkp_PartID.Properties.NullText = "";
             this.glkp_PartID.Properties.PopupView = this.gridLookUpEdit1View;
-            this.glkp_PartID.Size = new System.Drawing.Size(128, 20);
+            this.glkp_PartID.Size = new System.Drawing.Size(119, 20);
             this.glkp_PartID.StyleController = this.layoutControl1;
             this.glkp_PartID.TabIndex = 1;
             // 
@@ -506,11 +506,11 @@ namespace POS.Forms
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup6,
             this.layoutControlGroup3,
-            this.layoutControlGroup7,
             this.layoutControlGroup8,
             this.layoutControlGroup1,
             this.layoutControlGroup2,
-            this.layoutControlGroup4});
+            this.layoutControlGroup4,
+            this.layoutControlGroup7});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(906, 513);
             this.Root.TextVisible = false;
@@ -586,36 +586,6 @@ namespace POS.Forms
             this.layoutControlItem7.TextLocation = DevExpress.Utils.Locations.Right;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(63, 13);
             // 
-            // layoutControlGroup7
-            // 
-            this.layoutControlGroup7.AppearanceGroup.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
-            this.layoutControlGroup7.AppearanceGroup.Options.UseBorderColor = true;
-            this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem4,
-            this.layoutControlItem1});
-            this.layoutControlGroup7.Location = new System.Drawing.Point(664, 90);
-            this.layoutControlGroup7.Name = "layoutControlGroup7";
-            this.layoutControlGroup7.Size = new System.Drawing.Size(222, 93);
-            this.layoutControlGroup7.Text = "بيانات الفاتوره";
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.dt_Date;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 24);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(198, 24);
-            this.layoutControlItem4.Text = "التاريخ";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.txt_Code;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(198, 24);
-            this.layoutControlItem1.Text = "رقم الفاتوره";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
-            // 
             // layoutControlGroup8
             // 
             this.layoutControlGroup8.AppearanceGroup.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success;
@@ -673,7 +643,7 @@ namespace POS.Forms
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem3,
             this.layoutControlItem2});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(664, 0);
+            this.layoutControlGroup1.Location = new System.Drawing.Point(664, 93);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Size = new System.Drawing.Size(222, 90);
             this.layoutControlGroup1.Text = "بيانات طرف التعامل";
@@ -730,7 +700,7 @@ namespace POS.Forms
             this.layoutControlItem13.Control = this.spn_Tax;
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(70, 24);
+            this.layoutControlItem13.Size = new System.Drawing.Size(69, 24);
             this.layoutControlItem13.Text = "%";
             this.layoutControlItem13.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
@@ -749,18 +719,18 @@ namespace POS.Forms
             // layoutControlItem14
             // 
             this.layoutControlItem14.Control = this.spn_TaxValue;
-            this.layoutControlItem14.Location = new System.Drawing.Point(70, 24);
+            this.layoutControlItem14.Location = new System.Drawing.Point(69, 24);
             this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(128, 24);
+            this.layoutControlItem14.Size = new System.Drawing.Size(129, 24);
             this.layoutControlItem14.Text = "ق.ضريبه";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(63, 13);
             // 
             // layoutControlItem11
             // 
             this.layoutControlItem11.Control = this.spn_DiscountValue;
-            this.layoutControlItem11.Location = new System.Drawing.Point(70, 72);
+            this.layoutControlItem11.Location = new System.Drawing.Point(69, 72);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(128, 24);
+            this.layoutControlItem11.Size = new System.Drawing.Size(129, 24);
             this.layoutControlItem11.Text = "ق.حصم";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(63, 13);
             // 
@@ -769,7 +739,7 @@ namespace POS.Forms
             this.layoutControlItem12.Control = this.spn_DiscountRation;
             this.layoutControlItem12.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(70, 24);
+            this.layoutControlItem12.Size = new System.Drawing.Size(69, 24);
             this.layoutControlItem12.Text = "%";
             this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem12.TextSize = new System.Drawing.Size(0, 0);
@@ -814,6 +784,36 @@ namespace POS.Forms
             this.layoutControlItem5.Size = new System.Drawing.Size(359, 24);
             this.layoutControlItem5.Text = "تاريخ التوصيل";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(63, 13);
+            // 
+            // layoutControlGroup7
+            // 
+            this.layoutControlGroup7.AppearanceGroup.BorderColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Warning;
+            this.layoutControlGroup7.AppearanceGroup.Options.UseBorderColor = true;
+            this.layoutControlGroup7.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem4,
+            this.layoutControlItem1});
+            this.layoutControlGroup7.Location = new System.Drawing.Point(664, 0);
+            this.layoutControlGroup7.Name = "layoutControlGroup7";
+            this.layoutControlGroup7.Size = new System.Drawing.Size(222, 93);
+            this.layoutControlGroup7.Text = "بيانات الفاتوره";
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.dt_Date;
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 24);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(198, 24);
+            this.layoutControlItem4.Text = "التاريخ";
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(63, 13);
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.txt_Code;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(198, 24);
+            this.layoutControlItem1.Text = "رقم الفاتوره";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
             // 
             // Frm_Invoice
             // 
@@ -862,9 +862,6 @@ namespace POS.Forms
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
@@ -883,6 +880,9 @@ namespace POS.Forms
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

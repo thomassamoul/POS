@@ -49,7 +49,7 @@ namespace POS.Forms
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(800, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(423, 24);
             this.barDockControlRight.Manager = null;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 426);
             // 
@@ -68,7 +68,7 @@ namespace POS.Forms
             this.btn_save,
             this.btn_New,
             this.btn_Delete});
-            this.barManager1.MaxItemId = 5;
+            this.barManager1.MaxItemId = 6;
             // 
             // bar1
             // 
@@ -86,8 +86,7 @@ namespace POS.Forms
             // 
             this.btn_save.Caption = "حفظ";
             this.btn_save.Id = 2;
-            this.btn_save.ImageOptions.Image = global::POS.Properties.Resources.save_16x16;
-            this.btn_save.ImageOptions.LargeImage = global::POS.Properties.Resources.save_32x32;
+            this.btn_save.ImageOptions.SvgImage = global::POS.Properties.Resources.save;
             this.btn_save.Name = "btn_save";
             this.btn_save.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_save_ItemClick);
             // 
@@ -95,8 +94,7 @@ namespace POS.Forms
             // 
             this.btn_New.Caption = "جديد";
             this.btn_New.Id = 3;
-            this.btn_New.ImageOptions.Image = global::POS.Properties.Resources.add_16x16;
-            this.btn_New.ImageOptions.LargeImage = global::POS.Properties.Resources.add_32x32;
+            this.btn_New.ImageOptions.SvgImage = global::POS.Properties.Resources.actions_addcircled;
             this.btn_New.Name = "btn_New";
             this.btn_New.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
@@ -104,7 +102,7 @@ namespace POS.Forms
             // 
             this.btn_Delete.Caption = "حذف";
             this.btn_Delete.Id = 4;
-            this.btn_Delete.ImageOptions.SvgImage = global::POS.Properties.Resources.cancel;
+            this.btn_Delete.ImageOptions.SvgImage = global::POS.Properties.Resources.actions_deletecircled;
             this.btn_Delete.Name = "btn_Delete";
             this.btn_Delete.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
@@ -114,7 +112,7 @@ namespace POS.Forms
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(800, 24);
+            this.barDockControlTop.Size = new System.Drawing.Size(423, 24);
             // 
             // barDockControlBottom
             // 
@@ -122,7 +120,7 @@ namespace POS.Forms
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 450);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(800, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(423, 0);
             // 
             // barDockControlLeft
             // 
@@ -136,7 +134,7 @@ namespace POS.Forms
             // 
             this.barDockControl1.CausesValidation = false;
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl1.Location = new System.Drawing.Point(800, 24);
+            this.barDockControl1.Location = new System.Drawing.Point(423, 24);
             this.barDockControl1.Manager = this.barManager1;
             this.barDockControl1.Size = new System.Drawing.Size(0, 426);
             // 
@@ -156,7 +154,7 @@ namespace POS.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(423, 450);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControl1);

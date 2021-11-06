@@ -39,7 +39,6 @@ namespace POS.Forms
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -47,6 +46,7 @@ namespace POS.Forms
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -56,16 +56,19 @@ namespace POS.Forms
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 24);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+            this.gridControl1.Location = new System.Drawing.Point(0, 26);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(453, 261);
+            this.gridControl1.Size = new System.Drawing.Size(680, 400);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 512;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -74,32 +77,28 @@ namespace POS.Forms
             // 
             this.btn_save.Caption = "حفظ";
             this.btn_save.Id = 2;
-            this.btn_save.ImageOptions.Image = global::POS.Properties.Resources.save_16x16;
-            this.btn_save.ImageOptions.LargeImage = global::POS.Properties.Resources.save_32x32;
             this.btn_save.Name = "btn_save";
             // 
             // barButtonItem3
             // 
             this.barButtonItem3.Caption = "جديد";
             this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.Image = global::POS.Properties.Resources.add_16x16;
-            this.barButtonItem3.ImageOptions.LargeImage = global::POS.Properties.Resources.add_32x32;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
             // barButtonItem4
             // 
             this.barButtonItem4.Caption = "حذف";
             this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.SvgImage = global::POS.Properties.Resources.cancel;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(453, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(680, 26);
             this.barDockControlRight.Manager = null;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 261);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 400);
             // 
             // barManager1
             // 
@@ -133,24 +132,15 @@ namespace POS.Forms
             // 
             this.barButtonItem1.Caption = "جديد";
             this.barButtonItem1.Id = 2;
-            this.barButtonItem1.ImageOptions.Image = global::POS.Properties.Resources.add_16x16;
-            this.barButtonItem1.ImageOptions.LargeImage = global::POS.Properties.Resources.save_32x32;
+            this.barButtonItem1.ImageOptions.SvgImage = global::POS.Properties.Resources.save;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "حذف";
-            this.barButtonItem5.Id = 4;
-            this.barButtonItem5.ImageOptions.SvgImage = global::POS.Properties.Resources.cancel;
-            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // barButtonItem6
             // 
             this.barButtonItem6.Caption = "تحديث";
             this.barButtonItem6.Id = 0;
-            this.barButtonItem6.ImageOptions.Image = global::POS.Properties.Resources.recurrence_16x16;
-            this.barButtonItem6.ImageOptions.LargeImage = global::POS.Properties.Resources.recurrence_32x32;
+            this.barButtonItem6.ImageOptions.SvgImage = global::POS.Properties.Resources.changeview;
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
@@ -172,53 +162,62 @@ namespace POS.Forms
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(453, 24);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlTop.Size = new System.Drawing.Size(680, 26);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 285);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 426);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(453, 20);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(680, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 26);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 261);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 400);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl2.Location = new System.Drawing.Point(453, 24);
+            this.barDockControl2.Location = new System.Drawing.Point(680, 26);
             this.barDockControl2.Manager = this.barManager1;
-            this.barDockControl2.Size = new System.Drawing.Size(0, 261);
+            this.barDockControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControl2.Size = new System.Drawing.Size(0, 400);
             // 
             // barButtonItem2
             // 
             this.barButtonItem2.Caption = "جديد";
             this.barButtonItem2.Id = 3;
-            this.barButtonItem2.ImageOptions.Image = global::POS.Properties.Resources.add_16x16;
-            this.barButtonItem2.ImageOptions.LargeImage = global::POS.Properties.Resources.add_32x32;
             this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "حذف";
+            this.barButtonItem5.Id = 4;
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // barDockControl1
             // 
             this.barDockControl1.CausesValidation = false;
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl1.Location = new System.Drawing.Point(453, 24);
+            this.barDockControl1.Location = new System.Drawing.Point(680, 26);
             this.barDockControl1.Manager = this.barManager1;
-            this.barDockControl1.Size = new System.Drawing.Size(0, 261);
+            this.barDockControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.barDockControl1.Size = new System.Drawing.Size(0, 400);
             // 
             // Frm_StoresList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 305);
+            this.ClientSize = new System.Drawing.Size(680, 446);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControl1);
@@ -226,7 +225,7 @@ namespace POS.Forms
             this.Controls.Add(this.barDockControl2);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.IconOptions.SvgImage = global::POS.Properties.Resources.menu;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_StoresList";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

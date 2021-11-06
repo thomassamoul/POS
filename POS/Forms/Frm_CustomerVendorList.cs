@@ -11,7 +11,6 @@ namespace POS.Forms
     public partial class Frm_CustomerVendorList : Frm_Master
     {
         bool isCustomer;
-        private DAL.CustomersAndVendor cusVendor;
 
         public Frm_CustomerVendorList(bool isCustomer)
         {
@@ -26,7 +25,7 @@ namespace POS.Forms
             var ins = new DAL.CustomersAndVendor();
             gridView1.Columns[nameof(ins.ID)].Visible = false;
             gridView1.Columns[nameof(ins.AccountID)].Visible = false;
-            gridView1.Columns[nameof(ins.IsCustomuer)].Visible = false;
+            gridView1.Columns[nameof(ins.IsCustomer)].Visible = false;
             gridView1.Columns[nameof(ins.Name)].Caption = "الاسم";
             gridView1.Columns[nameof(ins.Phone)].Caption = "الهاتف";
             gridView1.Columns[nameof(ins.Mobile)].Caption = "الموبيل";

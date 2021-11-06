@@ -50,7 +50,8 @@ namespace POS.Forms
         {
             product = new DAL.Product()
             {
-                Code = GetNewProductCode()
+                Code = GetNewProductCode(),
+                IsActive = true
             };
             var db = new DAL.dbDataContext();
             var categ = db.ProductCategories.Where(x => db.ProductCategories.Where(w => w.ParentID == x.ID).Count() == 0).FirstOrDefault();
@@ -98,7 +99,6 @@ namespace POS.Forms
             product.Image = GetByteFromImage(pictureEdit1.Image);
             base.SetData();
         }
-
 
         bool ValdiateData()
         {
@@ -194,7 +194,6 @@ namespace POS.Forms
             return img;
         }
 
-
         public override void RefreshData()
         {
             using (var db = new DAL.dbDataContext())
@@ -248,7 +247,6 @@ namespace POS.Forms
             gridView1.InvalidRowException += GridView1_InvalidRowException;
             gridView1.FocusedRowChanged += GridView1_FocusedRowChanged;
             gridView1.CustomRowCellEditForEditing += GridView1_CustomRowCellEditForEditing;
-
 
         }
 
@@ -324,7 +322,6 @@ namespace POS.Forms
                 ((List<DAL.UnitName>)repoUOM.DataSource).Add(NewObject);
                 ((List<DAL.UnitName>)((LookUpEdit)sender).Properties.DataSource).Add(NewObject);
 
-
                 e.Handled = true;
             }
         }
@@ -352,7 +349,7 @@ namespace POS.Forms
                 maxCode = db.Products.Select(x => x.Code).Max();
             }
 
-            return GetNumberInString(maxCode);
+            return GetNextNumberInString(maxCode);
         }
 
         private string GetNewBarCode()
@@ -363,28 +360,7 @@ namespace POS.Forms
                 maxCode = db.ProductUnits.Select(x => x.Barcode).Max();
             }
 
-            return GetNumberInString(maxCode);
-        }
-
-        private string GetNumberInString(string number)
-        {
-            if (number == string.Empty || number == null)
-
-                return "1";
-            string str1 = "";
-            foreach (char c in number)
-                str1 = char.IsDigit(c) ? str1 + c.ToString() : "";
-            if (str1 == string.Empty)
-                return number + "1";
-
-            string str2 = str1.Insert(0, "1");
-            str2 = (Convert.ToInt32(str2) + 1).ToString();
-            string str3 = str2[0] == '1' ? str2.Remove(0, 1) : str2.Remove(0, 1).Insert(0, "1");
-
-            int index = number.LastIndexOf(str1);
-            number = number.Remove(index);
-            number = number.Insert(index, str3);
-            return number;
+            return GetNextNumberInString(maxCode);
         }
 
         Boolean CheckIfBarcodeExist(string barcode, int productId)

@@ -25,9 +25,9 @@ namespace POS.Forms
             gridView1.CustomColumnDisplayText += GridView1_CustomColumnDisplayText;
             gridControl1.ViewRegistered += GridControl1_ViewRegistered;
             gridView1.OptionsDetail.ShowDetailTabs = false;
-
-
+            
             var ins = new Session.ProductViewClass();
+
             gridView1.Columns[nameof(ins.CategoryName)].Caption = "الفئة";
             gridView1.Columns[nameof(ins.Code)].Caption = "الكود";
             gridView1.Columns[nameof(ins.Descreption)].Caption = "الوصف";
@@ -62,7 +62,6 @@ namespace POS.Forms
                 view.Columns["SellPrice"].Caption = "سعر البيع";
                 view.Columns["BuyPrice"].Caption = "سعر الشراء";
                 view.Columns["Barcode"].Caption = "الباركود";
-
             }
         }
 
@@ -82,14 +81,12 @@ namespace POS.Forms
             {
                 e.DisplayText = Master.ProductTypesList.Single(x => x.ID == Convert.ToInt32(e.Value)).Name;
             }
-
         }
 
         public override void RefreshData()
         {
             base.RefreshData();
-            gridControl1.DataSource = Session.ProductsView;
-            
+            gridControl1.DataSource = Session.ProductsView;            
         }
 
     }

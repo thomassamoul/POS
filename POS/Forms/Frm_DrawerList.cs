@@ -59,5 +59,7 @@ namespace POS.Forms
             }
             base.RefreshData();
         }
+
+
     }
 }

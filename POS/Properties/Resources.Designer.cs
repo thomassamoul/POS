@@ -63,39 +63,89 @@ namespace POS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static DevExpress.Utils.Svg.SvgImage _private {
+        internal static DevExpress.Utils.Svg.SvgImage about {
             get {
-                object obj = ResourceManager.GetObject("private", resourceCulture);
+                object obj = ResourceManager.GetObject("about", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap add_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("add_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap add_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("add_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static DevExpress.Utils.Svg.SvgImage cancel {
+        internal static DevExpress.Utils.Svg.SvgImage actions_addcircled {
             get {
-                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                object obj = ResourceManager.GetObject("actions_addcircled", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage actions_deletecircled {
+            get {
+                object obj = ResourceManager.GetObject("actions_deletecircled", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage actions_window {
+            get {
+                object obj = ResourceManager.GetObject("actions_window", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage bo_product_group {
+            get {
+                object obj = ResourceManager.GetObject("bo_product_group", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage bo_sale {
+            get {
+                object obj = ResourceManager.GetObject("bo_sale", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage bo_user {
+            get {
+                object obj = ResourceManager.GetObject("bo_user", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage business_safe {
+            get {
+                object obj = ResourceManager.GetObject("business_safe", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage changefontstyle {
+            get {
+                object obj = ResourceManager.GetObject("changefontstyle", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
@@ -113,9 +163,9 @@ namespace POS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static DevExpress.Utils.Svg.SvgImage customerprofilereport {
+        internal static DevExpress.Utils.Svg.SvgImage customerquicksales {
             get {
-                object obj = ResourceManager.GetObject("customerprofilereport", resourceCulture);
+                object obj = ResourceManager.GetObject("customerquicksales", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
@@ -123,29 +173,9 @@ namespace POS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static DevExpress.Utils.Svg.SvgImage financial {
+        internal static DevExpress.Utils.Svg.SvgImage initialstate {
             get {
-                object obj = ResourceManager.GetObject("financial", resourceCulture);
-                return ((DevExpress.Utils.Svg.SvgImage)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap info_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("info_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
-        /// </summary>
-        internal static DevExpress.Utils.Svg.SvgImage listview {
-            get {
-                object obj = ResourceManager.GetObject("listview", resourceCulture);
+                object obj = ResourceManager.GetObject("initialstate", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
@@ -163,6 +193,16 @@ namespace POS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage print {
+            get {
+                object obj = ResourceManager.GetObject("print", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage products {
             get {
                 object obj = ResourceManager.GetObject("products", resourceCulture);
@@ -171,72 +211,32 @@ namespace POS.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static System.Drawing.Bitmap recurrence_16x16 {
+        internal static DevExpress.Utils.Svg.SvgImage save {
             get {
-                object obj = ResourceManager.GetObject("recurrence_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap recurrence_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("recurrence_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("save", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static DevExpress.Utils.Svg.SvgImage refreshallpivottable {
+        internal static DevExpress.Utils.Svg.SvgImage shopping_sales {
             get {
-                object obj = ResourceManager.GetObject("refreshallpivottable", resourceCulture);
+                object obj = ResourceManager.GetObject("shopping_sales", resourceCulture);
                 return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
-        internal static System.Drawing.Bitmap save_16x16 {
+        internal static DevExpress.Utils.Svg.SvgImage shopping_store {
             get {
-                object obj = ResourceManager.GetObject("save_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap save_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("save_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap trash_16x16 {
-            get {
-                object obj = ResourceManager.GetObject("trash_16x16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap trash_32x32 {
-            get {
-                object obj = ResourceManager.GetObject("trash_32x32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                object obj = ResourceManager.GetObject("shopping_store", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
             }
         }
     }

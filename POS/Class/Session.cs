@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using static POS.Class.DatabaseWatcher;
-using static POS.Class.Session.ProductViewClass;
 
 namespace POS.Class
 {
@@ -12,16 +11,33 @@ namespace POS.Class
 
         public static class Defaults
         {
-
             public static int Drawer { get => 1; }
-
             public static int Customer { get => 1; }
-
             public static int Vendor { get => 2; }
+            public static int Store { get => 1006; }
+            public static int RawStore { get => 1006; }
+            public static int DiscountAllowedAccount { get => 7; }
+            public static int DiscountReceivedAccount { get => 6; }
+             public static int SalesTax { get => 40; }
+            public static int PurchaseTax { get => 41; }
+            public static int PurchaseExpences { get => 42; }
+        }
+        public static class GlobalSettings
+        {
+            public static Boolean ReadFormScaleBarcode { get => true; }
+            public static string ScaleBarcodePrefix { get => "21"; }
+            public static byte ProductCodeLength { get => 5; }
+            public static byte BarcodeLength { get => 13; }
+            public static byte ValueCodeLength { get => 5; }
+            public static ReadValueMode ReadMode { get => ReadValueMode.Price; }
+            public static Boolean IgnoreCheckDigit { get => true; }
+            public static byte DivideValueBy { get => 2; }
 
-            public static int Store { get => 1; }
-
-            public static int RawStore { get => 1; }
+            public enum ReadValueMode
+            {
+                Weight,
+                Price,
+            }
         }
 
         private static BindingList<DAL.UnitName> unitNames;
@@ -52,9 +68,9 @@ namespace POS.Class
                     {
                         _products = new BindingList<DAL.Product>(db.Products.ToList());
                     }
-                    DatabaseWatcher.Product = new TableDependency.SqlClient.SqlTableDependency<Products>(Properties.Settings.Default.POSConnectionString);
-                    DatabaseWatcher.Product.OnChanged += DatabaseWatcher.ProductsChanged;
-                    DatabaseWatcher.Product.Start();
+                    DatabaseWatcher.Products = new TableDependency.SqlClient.SqlTableDependency<Product>(Properties.Settings.Default.POSConnectionString);
+                    DatabaseWatcher.Products.OnChanged += DatabaseWatcher.ProductsChanged;
+                    DatabaseWatcher.Products.Start();
                 }
                 return _products;
             }
@@ -166,11 +182,11 @@ namespace POS.Class
                 {
                     using (var db = new DAL.dbDataContext())
                     {
-                        _vendors = new BindingList<DAL.CustomersAndVendor>(db.CustomersAndVendors.Where(x => x.IsCustomuer == false).ToList());
+                        _vendors = new BindingList<DAL.CustomersAndVendor>(db.CustomersAndVendors.Where(x => x.IsCustomer == false).ToList());
                     }
                     DatabaseWatcher.Vendors = new TableDependency.SqlClient.SqlTableDependency<CustomersAndVendors>(Properties.Settings.Default.POSConnectionString,
                         filter: new DatabaseWatcher.VendorsOnly());
-                    DatabaseWatcher.Vendors.OnChanged += DatabaseWatcher.VendorsChanged;
+                    DatabaseWatcher.Vendors.OnChanged += VendorsChanged;
                     DatabaseWatcher.Vendors.Start();
 
                 }
@@ -188,7 +204,7 @@ namespace POS.Class
                 {
                     using (var db = new DAL.dbDataContext())
                     {
-                        _customers = new BindingList<DAL.CustomersAndVendor>(db.CustomersAndVendors.Where(x => x.IsCustomuer == true).ToList());
+                        _customers = new BindingList<DAL.CustomersAndVendor>(db.CustomersAndVendors.Where(x => x.IsCustomer == true).ToList());
                     }
                     DatabaseWatcher.Customers = new TableDependency.SqlClient.SqlTableDependency<CustomersAndVendors>(Properties.Settings.Default.POSConnectionString,
                         filter: new DatabaseWatcher.CustomerOnly());
@@ -242,6 +258,5 @@ namespace POS.Class
             }
         }
 
-      
     }
 }
